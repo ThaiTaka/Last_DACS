@@ -1,0 +1,413 @@
+<!-- <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>DEXLIGHT.COM</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.png" alt="" class="logo-pic">
+        <div class="logo"><a href="#">DEXLIGHT.COM</a></div>
+        <div class="slogan">"Nghiên cứu hôm nay, thay đổi ngày mai"</div>
+        <div class="user-profile">
+            <div class="user-avatar">TN</div>
+            <div class="user-info">
+                <div class="user-name">Phan Thị Thanh Nga</div>
+                <div class="user-role">Giảng viên</div>
+            </div>
+    </header>
+
+    <nav class="sidebar">
+        <button class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <a href="./info.html" class="menu-item" data-tooltip="Thông tin">
+            <i class="fas fa-info-circle"></i>
+            <span>Thông tin</span>
+        </a>
+        <a href="./index.html" class="menu-item active" data-tooltip="Các đề tài nghiên cứu">
+            <i class="fas fa-folder"></i>
+            <span>Các đề tài nghiên cứu</span>
+        </a>
+        <a href="./NewDeTai.html" class="menu-item" data-tooltip="Đề tài của tôi">
+            <i class="fas fa-file-alt"></i>
+            <span>Thêm đề tài mới</span>
+        </a>
+        <a href="#" class="menu-item" data-tooltip="Sản phẩm khoa học">
+            <i class="fas fa-flask"></i>
+            <span>Sản phẩm khoa học</span>
+        </a>
+    </nav>
+
+    <main class="main-content">
+        
+        <div class="container detail-page" id="detailPage">
+            <a href="./index.html" class="back-page">
+                <button class="back-button" id="backButton">
+                    ← Quay lại
+                </button>
+            </a>
+    
+            <div class="detail-header">
+                <h1>Nghiên cứu phát triển hệ thống mLearning<br>ở quy mô nhỏ</h1>
+            </div>
+    
+            <div class="basic-info">
+                <h2 class="section-title">Thông tin cơ bản</h2>
+                <div class="info-grid">
+                    <span class="info-label">Chủ nhiệm</span>
+                    <span>Ths.Trần Văn A</span>
+                    
+                    <span class="info-label">Thời gian thực hiện</span>
+                    <span>15/10/2021 - 20/12/2021</span>
+                    
+                    <span class="info-label">Trạng thái</span>
+                    <span class="status-badge">Đã nghiệm thu</span>
+                    
+                    <span class="info-label">Đã tài cấp</span>
+                    <span>Cơ sở</span>
+                    
+                    <span class="info-label">Loại</span>
+                    <span>Đề tài nghiên cứu khoa học của Giảng viên</span>
+                </div>
+            </div>
+    
+            <div class="members-section">
+                <h2 class="section-title">Giảng viên Tham gia đề tài Nghiên cứu</h2>
+                <ul class="members-list">
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                </ul>
+            </div>
+    
+            <div class="objectives-section">
+                <h2 class="section-title">Thông tin đề tài nghiên cứu khoa học</h2>
+                <h3 class="section-title">Mô tả đề tài:</h3>
+                <ul class="objectives-list">
+                    <li>Nghiên cứu về hệ điều hành Android</li>
+                    <li>Nghiên cứu cách thức phát triển ứng dụng trên thiết bị di động</li>
+                    <li>Nghiên cứu về mLearning (Mobile Learning)</li>
+                    <li>Triển khai hệ thống Moodle trên server</li>
+                    <li>Triển khai thử nghiệm một vài bài giảng để truy cập từ điện thoại dùng wifi hoặc 3G</li>
+                </ul>
+            </div>
+    
+            <div class="results-section">
+                <h2 class="section-title">Kết quả nghiệm thu</h2>
+                <div class="result-box">
+                    <p>Ngày nghiệm thu: 20/12/2021</p>
+                    <div class="achievement"><span>Giải - Thành tựu:</span> Giải 3 cấp trường</div>
+                    <p>Xếp loại nghiệm thu: Tốt</p>
+                </div>
+            </div>
+    
+            <div class="related-papers">
+                <h2 class="section-title">Các bài báo - bài viết liên quan</h2>
+                
+            </div>
+            
+        </div>
+        
+    
+    </main>
+    
+    <script src="main.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>DEXLIGHT.COM</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <img src="./img/logo.png" alt="" class="logo-pic">
+        <div class="logo"><a href="#">DEXLIGHT.COM</a></div>
+        <div class="slogan">"Nghiên cứu hôm nay, thay đổi ngày mai"</div>
+        <div class="user-profile">
+            <div class="user-avatar">TN</div>
+            <div class="user-info">
+                <div class="user-name">Phan Thị Thanh Nga</div>
+                <div class="user-role">Giảng viên</div>
+            </div>
+    </header>
+
+    <nav class="sidebar">
+        <button class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <a href="./info.html" class="menu-item" data-tooltip="Thông tin">
+            <i class="fas fa-info-circle"></i>
+            <span>Thông tin</span>
+        </a>
+        <a href="./index.html" class="menu-item active" data-tooltip="Các đề tài nghiên cứu">
+            <i class="fas fa-folder"></i>
+            <span>Các đề tài nghiên cứu</span>
+        </a>
+        <a href="./NewDeTai.html" class="menu-item" data-tooltip="Đề tài của tôi">
+            <i class="fas fa-file-alt"></i>
+            <span>Thêm đề tài mới</span>
+        </a>
+        <!-- <a href="#" class="menu-item" data-tooltip="Sản phẩm khoa học">
+            <i class="fas fa-flask"></i>
+            <span>Sản phẩm khoa học</span>
+        </a> -->
+    </nav>
+
+    <main class="main-content">
+        
+        <div class="container detail-page" id="detailPage">
+            <a href="./index.html" class="back-page">
+                <button class="back-button" id="backButton">
+                    ← Quay lại
+                </button>
+            </a>
+    
+            <div class="detail-header">
+                <h1>Nghiên cứu phát triển hệ thống mLearning<br>ở quy mô nhỏ</h1>
+            </div>
+    
+            <!-- <div class="basic-info">
+                <h2 class="section-title">Thông tin cơ bản</h2>
+                <div class="info-grid">
+                    <span class="info-label">Chủ nhiệm</span>
+                    <span>Ths.Trần Văn A</span>
+                    
+                    <span class="info-label">Thời gian thực hiện</span>
+                    <span>15/10/2021 - 20/12/2021</span>
+                    
+                    <span class="info-label">Trạng thái</span>
+                    <span class="status-badge">Đã nghiệm thu</span>
+                    
+                    <span class="info-label">Đã tài cấp</span>
+                    <span>Cơ sở</span>
+                    
+                    <span class="info-label">Loại</span>
+                    <span>Đề tài nghiên cứu khoa học của Giảng viên</span>
+                </div>
+            </div>
+    
+            <div class="members-section">
+                <h2 class="section-title">Giảng viên Tham gia đề tài Nghiên cứu</h2>
+                <ul class="members-list">
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                </ul>
+            </div>
+    
+            <div class="objectives-section">
+                <h2 class="section-title">Thông tin đề tài nghiên cứu khoa học</h2>
+                <h3 class="section-title">Mô tả đề tài:</h3>
+                <ul class="objectives-list">
+                    <li>Nghiên cứu về hệ điều hành Android</li>
+                    <li>Nghiên cứu cách thức phát triển ứng dụng trên thiết bị di động</li>
+                    <li>Nghiên cứu về mLearning (Mobile Learning)</li>
+                    <li>Triển khai hệ thống Moodle trên server</li>
+                    <li>Triển khai thử nghiệm một vài bài giảng để truy cập từ điện thoại dùng wifi hoặc 3G</li>
+                </ul>
+            </div>
+    
+            <div class="results-section">
+                <h2 class="section-title">Kết quả nghiệm thu</h2>
+                <div class="result-box">
+                    <p>Ngày nghiệm thu: 20/12/2021</p>
+                    <div class="achievement"><span>Giải - Thành tựu:</span> Giải 3 cấp trường</div>
+                    <p>Xếp loại nghiệm thu: Tốt</p>
+                </div>
+            </div>  -->
+           <div class="basic-info">
+                <h2 class="section-title">Thông tin cơ bản</h2>
+                <div class="info-grid">
+                    <span class="info-label">Chủ nhiệm</span>
+                    <span id="chuNhiem"></span>
+                    
+                    <span class="info-label">Thời gian thực hiện</span>
+                    <span id="thoiGian"></span>
+                    
+                    <span class="info-label">Trạng thái</span>
+                    <span id="trangThai"></span>
+                    
+                    <span class="info-label">Đã tài cấp</span>
+                    <span id="coSo"></span>
+                    
+                    <span class="info-label">Loại</span>
+                    <span id="loai"></span>
+                </div>
+            </div>
+            
+            <div class="members-section">
+                <h2 class="section-title">Giảng viên Tham gia đề tài Nghiên cứu</h2>
+                <ul class="members-list" id="membersList">
+                </ul>
+            </div>
+            
+            <div class="objectives-section">
+                <h2 class="section-title">Thông tin đề tài nghiên cứu khoa học</h2>
+                <h3 class="section-title">Mô tả đề tài:</h3>
+                <ul class="objectives-list" id="objectivesList">
+                </ul>
+            </div>
+            
+            <div class="results-section">
+                <h2 class="section-title">Kết quả nghiệm thu</h2>
+                <div class="result-box">
+                    <p id="ngayNghiemThu"></p>
+                    <div class="achievement"><span></span><span id="giaiThanhTuu"></span></div>
+                    <p id="xepLoaiNghiemThu"></p>
+                </div>
+            </div>
+            
+            <!-- <div class="related-papers">
+                <h2 class="section-title">Các bài báo - bài viết liên quan</h2> -->
+                <div class="journal-container">
+                    <h1 class="journal-title">Các tài liệu có liên quan</h1>
+                    <div class="article">
+                        <img src="./img/tri-tue-nhan-tao-ai-2.webp" alt="Hội nghị blockchain" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Việt Nam đặt mục tiêu trong nhóm dẫn đầu khu vực về blockchain</h2>
+                            <p class="article-description">
+                                Chiến lược quốc gia về ứng dụng và phát triển công nghệ chuỗi khối đặt mục tiêu đến 2030, Việt Nam thuộc nhóm nước dẫn đầu khu vực về blockchain.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <img src="./img/tri-tue-nhan-tao-ai.webp" alt="Hội nghị blockchain" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Việt Nam đặt mục tiêu trong nhóm dẫn đầu khu vực về blockchain</h2>
+                            <p class="article-description">
+                                Chiến lược quốc gia về ứng dụng và phát triển công nghệ chuỗi khối đặt mục tiêu đến 2030, Việt Nam thuộc nhóm nước dẫn đầu khu vực về blockchain.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <img src="./img/tri-tue-nhan-tao-ai-1.webp" alt="Hội nghị blockchain" class="article-image">
+                        <div class="article-content">
+                            <h2 class="article-title">Việt Nam đặt mục tiêu trong nhóm dẫn đầu khu vực về blockchain</h2>
+                            <p class="article-description">
+                                Chiến lược quốc gia về ứng dụng và phát triển công nghệ chuỗi khối đặt mục tiêu đến 2030, Việt Nam thuộc nhóm nước dẫn đầu khu vực về blockchain.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+              
+          </div>
+        </div>
+    
+    </main> 
+    <script>
+        // Assuming firestoreData is the data you got from Firestore
+        const firestoreData = {
+            "documents": [
+                {
+                    "fields": {
+                        "MoTaDeTai": {
+                            "arrayValue": {
+                                "values": [
+                                    { "stringValue": "Nghiên cứu về hệ điều hành Android" },
+                                    { "stringValue": "Nghiên cứu cách thức phát triển ứng dụng trên thiết bị di động" },
+                                    { "stringValue": "Nghiên cứu về mLearning (Mobile Learning)" },
+                                    { "stringValue": "Triển khai hệ thống Moodle trên server" },
+                                    { "stringValue": "Triển khai thử nghiệm một vài bài giảng để truy cập từ điện thoại dùng wifi hoặc 3G" }
+                                ]
+                            }
+                        },
+                        "KetQuaThuNghiem": {
+                            "arrayValue": {
+                                "values": [
+                                    { "stringValue": "Ngày nghiệm thu: 20/12/2021" },
+                                    { "stringValue": "Giải - Thành tựu: Giải 3 cấp trường" },
+                                    { "stringValue": "Xếp loại nghiệm thu: Tốt" }
+                                ]
+                            }
+                        },
+                        "DeTai01": {
+                            "mapValue": {
+                                "fields": {
+                                    "CoSo": { "stringValue": "Cơ Sở" },
+                                    "TenDeTai": { "stringValue": "Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ" },
+                                    "Loai": { "stringValue": "Đề tài nghiên cứu khoa học của Giảng viên" },
+                                    "TrangThai": { "booleanValue": true },
+                                    "ChuNhiemDeTai": { "stringValue": "Ths. Trần Văn A" },
+                                    "ThoiGianThucHien": { "timestampValue": "2021-10-15T02:43:58.062Z" }
+                                }
+                            }
+                        },
+                        "GiangVienThamGia": {
+                            "arrayValue": {
+                                "values": [
+                                    { "stringValue": "Ths.Nguyễn Văn B" },
+                                    { "stringValue": "Ths.Nguyễn Văn C" },
+                                    { "stringValue": "Ths.Nguyễn Văn D" }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        };
+
+        // Parse Firestore data
+        const data = firestoreData.documents[0].fields;
+        const deTai = data.DeTai01.mapValue.fields;
+        const moTaDeTai = data.MoTaDeTai.arrayValue.values.map(item => item.stringValue);
+        const ketQuaThuNghiem = data.KetQuaThuNghiem.arrayValue.values.map(item => item.stringValue);
+        const giangVienThamGia = data.GiangVienThamGia.arrayValue.values.map(item => item.stringValue);
+
+        // Log the data to check
+        console.log(data);
+
+        // Bind data to the HTML
+        document.getElementById('chuNhiem').innerText = deTai.ChuNhiemDeTai.stringValue;
+        document.getElementById('thoiGian').innerText = new Date(deTai.ThoiGianThucHien.timestampValue).toLocaleDateString();
+        document.getElementById('trangThai').innerText = deTai.TrangThai.booleanValue ? 'Đã nghiệm thu' : 'Chưa nghiệm thu';
+        document.getElementById('coSo').innerText = deTai.CoSo.stringValue;
+        document.getElementById('loai').innerText = deTai.Loai.stringValue;
+
+        // Bind objectives (Mô tả đề tài)
+        const objectivesList = document.getElementById('objectivesList');
+        moTaDeTai.forEach(item => {
+            const li = document.createElement('li');
+            li.innerText = item;
+            objectivesList.appendChild(li);
+        });
+
+        // Bind members (Giảng viên tham gia đề tài)
+        const membersList = document.getElementById('membersList');
+        giangVienThamGia.forEach(item => {
+            const li = document.createElement('li');
+            li.innerText = item;
+            membersList.appendChild(li);
+        });
+
+        // Bind results (Kết quả nghiệm thu)
+        document.getElementById('ngayNghiemThu').innerText = ketQuaThuNghiem[0];
+        document.getElementById('giaiThanhTuu').innerText = ketQuaThuNghiem[1];
+        document.getElementById('xepLoaiNghiemThu').innerText = ketQuaThuNghiem[2];
+    </script>
+    <script src="new.js"></script>
+    <script src="project-handler.js"></script>
+</body>
+</html> 

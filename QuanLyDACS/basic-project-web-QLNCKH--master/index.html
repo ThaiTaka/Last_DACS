@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <title>DEXLIGHT.COM</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <img src="./img/logo.png" alt="" class="logo-pic">
+        <div class="logo"><a href="./index.html">DEXLIGHT.COM</a></div>
+        <div class="slogan">"Nghiên cứu hôm nay, thay đổi ngày mai"</div>
+        <div class="user-profile">
+            <div class="user-avatar">TN</div>
+            <div class="user-info">
+                <div class="user-name">Phan Thị Thanh Nga</div>
+                <div class="user-role">Giảng viên</div>
+            </div>
+    </header>
+
+    <nav class="sidebar">
+        <button class="sidebar-toggle" id="sidebarToggle">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <a href="./info.html" class="menu-item" data-tooltip="Thông tin">
+            <i class="fas fa-info-circle"></i>
+            <span>Thông tin</span>
+        </a>
+        <a href="./index.html" class="menu-item active" data-tooltip="Các đề tài nghiên cứu">
+            <i class="fas fa-folder"></i>
+            <span>Các đề tài nghiên cứu</span>
+        </a>
+        <a href="./NewDeTai.html" class="menu-item" data-tooltip="Đề tài của tôi">
+            <i class="fas fa-file-alt"></i>
+            <span>Thêm đề tài mới</span>
+        </a>
+        <!-- <a href="#" class="menu-item" data-tooltip="Sản phẩm khoa học">
+            <i class="fas fa-flask"></i>
+            <span>Sản phẩm khoa học</span>
+        </a> -->
+    </nav>
+
+    <main class="main-content">
+        <div id="projectContainer">
+            <div class="search-section">
+                <input class="input-search" type="text" placeholder="Tìm kiếm" style="margin-bottom: 20px;">
+
+                <div class="search-row">
+                    <div class="search-group" style="flex: 2;">
+                        <div class="date-range">
+                            <div class="date-field">
+                                <label>Từ</label>
+                                <input type="month" id="fromDate">
+                                <span id="fromDateDisplay"></span>
+                            </div>
+                            <div class="date-field">
+                                <label>Đến</label>
+                                <input type="month" id="toDate">
+                                <span id="toDateDisplay"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="search-field">
+                        <label>Đề tài</label>
+                        <select>
+                            <option>Sinh viên</option>
+                            <option>Giảng viên</option>
+                        </select>
+                    </div> -->
+
+                    <div class="search-field">
+                        <label>Xếp loại nghiệm thu</label>
+                        <select>
+                            <option>Tốt</option>
+                            <option>Khá</option>
+                            <option>Trung bình</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-status">
+                        <p>Trạng thái</p>
+                        <div class="dex-button-container">
+                            <button class="status-btn active" data-status="all">Tất cả</button>
+                            <button class="status-btn" data-status="completed">Đã nghiệm thu</button>
+                            <button class="status-btn" data-status="in-progress">Đang thực hiện</button>
+                            <button class="status-btn" data-status="cancelled">Đã hủy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <a href="./detail.html" class="link-card-detail">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/What-Does-It-Mean-for-Computers.jpg" alt="mLearning System">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ</h3>
+                        <p class="project-info">Chủ nhiệm: Ths.Trần Văn A</p>
+                        <p class="project-info">Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                        <div class="project-status">
+                            <span class="status-badge">Đã nghiệm thu</span>
+                            <div class="status-result">
+                                <span>Kết quả nghiệm thu</span>
+                                <span class="result-badge">Tốt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail.html" class="link-card-detail">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/What-Does-It-Mean-for-Computers.jpg" alt="mLearning System">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ</h3>
+                        <p class="project-info">Chủ nhiệm: Ths.Trần Văn A</p>
+                        <p class="project-info">Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                        <div class="project-status">
+                            <span class="status-badge">Đã nghiệm thu</span>
+                            <div class="status-result">
+                                <span>Kết quả nghiệm thu</span>
+                                <span class="result-badge">Tốt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a href="./detail.html" class="link-card-detail">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/What-Does-It-Mean-for-Computers.jpg" alt="mLearning System">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ</h3>
+                        <p class="project-info">Chủ nhiệm: Ths.Trần Văn A</p>
+                        <p class="project-info">Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                        <div class="project-status">
+                            <span class="status-badge">Đã nghiệm thu</span>
+                            <div class="status-result">
+                                <span>Kết quả nghiệm thu</span>
+                                <span class="result-badge">Tốt</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- <div onclick="showDetail()" class="project-card">
+                <img src="./img/What-Does-It-Mean-for-Computers.jpg" alt="mLearning Project" class="project-image">
+                <div class="project-info">
+                    <h2 class="project-title">Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ</h2>
+                    <div class="project-details">
+                        <p>Chủ nhiệm: Ths.Trần Văn A</p>
+                        <p>Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                    </div>
+                </div>
+                <div class="project-card-note">
+                    <div class="project-card-note-msg">Đã nghiệm thu</div> 
+                </div>
+                <div class="status-badge">
+                    <div class="status-msg">Kết quả nghiệm thu</div>
+                    <div class="status-badge-info">Tốt</div>
+                </div>
+            </div> -->
+            <a href="./detail.html" class="link-card-detail">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/Blockchain-Applications-Analysed-through-Workshop-Sessions-1536x768.webp"
+                            alt="mLearning System">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Ứng dụng mới của Blockchain cho hệ thống thông tin và quản lý quy trình
+                            kinh doanh</h3>
+                        <p class="project-info">Chủ nhiệm: Ths.Trần Văn A</p>
+                        <p class="project-info">Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                        <div class="project-status">
+                            <span class="in-progress status-badge">Đang thực hiện</span>
+                            <div class="status-result">
+                                <span>Kết quả nghiệm thu</span>
+                                <span class="result-badge in-progress">Chưa có</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="./detail.html" class="link-card-detail">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/tri-tue-nhan-tao-ai-0.webp" alt="mLearning System">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ</h3>
+                        <p class="project-info">Chủ nhiệm: Ths.Trần Văn A</p>
+                        <p class="project-info">Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                        <div class="project-status">
+                            <span class="status-badge deleted">Đã hủy</span>
+                            <div class="status-result">
+                                <span>Kết quả nghiệm thu</span>
+                                <span class="result-badge deleted">Không có</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./detail.html" class="link-card-detail">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/tri-tue-nhan-tao-ai-0.webp" alt="mLearning System">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ</h3>
+                        <p class="project-info">Chủ nhiệm: Ths.Trần Văn A</p>
+                        <p class="project-info">Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                        <div class="project-status">
+                            <span class="status-badge deleted">Đã hủy</span>
+                            <div class="status-result">
+                                <span>Kết quả nghiệm thu</span>
+                                <span class="result-badge deleted">Không có</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <a href="./detail.html" class="link-card-detail">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="./img/tri-tue-nhan-tao-ai-0.webp" alt="mLearning System">
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ</h3>
+                        <p class="project-info">Chủ nhiệm: Ths.Trần Văn A</p>
+                        <p class="project-info">Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                        <div class="project-status">
+                            <span class="status-badge deleted">Đã hủy</span>
+                            <div class="status-result">
+                                <span>Kết quả nghiệm thu</span>
+                                <span class="result-badge deleted">Không có</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="./img/What-Does-It-Mean-for-Computers.jpg" alt="mLearning System">
+                </div>
+                <div class="project-details">
+                    <h3 class="project-title">Nghiên cứu phát triển hệ thống mLearning ở quy mô nhỏ</h3>
+                    <p class="project-info">Chủ nhiệm: Ths.Trần Văn A</p>
+                    <p class="project-info">Thời gian thực hiện: 15/10/2021 - 20/12/2021</p>
+                    <div class="project-status">
+                        <span class="status-badge">Đã nghiệm thu</span>
+                        <div class="status-result">
+                            <span>Kết quả nghiệm thu</span>
+                            <span class="result-badge">Tốt</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Trang chi tiết -->
+        <!-- <div class="container detail-page" id="detailPage">
+            <button onclick="hideDetail()" class="back-button" id="backButton">
+                ← Quay lại
+            </button>
+
+            <div class="detail-header">
+                <h1>Nghiên cứu phát triển hệ thống mLearning<br>ở quy mô nhỏ</h1>
+            </div>
+
+            <div class="basic-info">
+                <h2 class="section-title">Thông tin cơ bản</h2>
+                <div class="info-grid">
+                    <span class="info-label">Chủ nhiệm</span>
+                    <span>Ths.Trần Văn A</span>
+
+                    <span class="info-label">Thời gian thực hiện</span>
+                    <span>15/10/2021 - 20/12/2021</span>
+
+                    <span class="info-label">Trạng thái</span>
+                    <span>Đã nghiệm thu</span>
+
+                    <span class="info-label">Đã tốt cập</span>
+                    <span>Cơ sở</span>
+
+                    <span class="info-label">Loại</span>
+                    <span>Đề tài nghiên cứu khoa học của Giảng viên</span>
+                </div>
+            </div>
+
+            <div class="members-section">
+                <h2 class="section-title">Giảng viên Tham gia đề tài Nghiên cứu</h2>
+                <ul class="members-list">
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                    <li>Ths.Trần Văn A - Trưởng khoa - Khoa CNTT</li>
+                </ul>
+            </div>
+
+            <div class="objectives-section">
+                <h2 class="section-title">Thông tin đề tài nghiên cứu khoa học</h2>
+                <h3 class="section-title">Mô tả đề tài:</h3>
+                <ul class="objectives-list">
+                    <li>Nghiên cứu về hệ điều hành Android</li>
+                    <li>Nghiên cứu cách thức phát triển ứng dụng trên thiết bị di động</li>
+                    <li>Nghiên cứu về mLearning (Mobile Learning)</li>
+                    <li>Triển khai hệ thống Moodle trên server</li>
+                    <li>Triển khai thử nghiệm một vài bài giảng để truy cập từ điện thoại dùng wifi hoặc 3G</li>
+                </ul>
+            </div>
+
+            <div class="results-section">
+                <h2 class="section-title">Kết quả nghiệm thu</h2>
+                <div class="result-box">
+                    <p>Ngày nghiệm thu: 20/12/2021</p>
+                    <div class="achievement"><span>Giải - Thành tựu:</span> Giải 3 cấp trường</div>
+                    <p>Xếp loại nghiệm thu: Tốt</p>
+                </div>
+            </div>
+
+            <div class="related-papers">
+                <h2 class="section-title">Các bài báo - bài viết liên quan</h2> -->
+                <!-- Phần này có thể được cập nhật động -->
+            <!-- </div>
+        </div> -->
+
+    </main>
+    
+    <script src="new.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

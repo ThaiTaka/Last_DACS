@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="infor.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <title>DEXLIGHT.COM</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./img/logo.png" alt="" class="logo-pic">
+    <div class="logo"><a href="#">DEXLIGHT.COM</a></div>
+    <div class="slogan">"Nghiên cứu hôm nay, thay đổi ngày mai"</div>
+    <div class="user-profile">
+      <div class="user-avatar">TN</div>
+      <div class="user-info">
+        <div class="user-name">Phan Thị Thanh Nga</div>
+        <div class="user-role">Giảng viên</div>
+      </div>
+  </header>
+
+  <nav class="sidebar">
+    <button class="sidebar-toggle" id="sidebarToggle">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+    <a href="./info.html" class="menu-item" data-tooltip="Thông tin">
+      <i class="fas fa-info-circle"></i>
+      <span>Thông tin</span>
+    </a>
+    <a href="./index.html" class="menu-item" data-tooltip="Các đề tài nghiên cứu">
+      <i class="fas fa-folder"></i>
+      <span>Các đề tài nghiên cứu</span>
+    </a>
+    <a href="#" class="menu-item active" data-tooltip="Đề tài của tôi">
+      <i class="fas fa-file-alt"></i>
+      <span>Thêm đề tài mới</span>
+    </a>
+    <!-- <a href="#" class="menu-item" data-tooltip="Sản phẩm khoa học">
+      <i class="fas fa-flask"></i>
+      <span>Sản phẩm khoa học</span>
+    </a> -->
+  </nav>
+
+  <main class="main-content">
+    <div class="section-title">
+      <label class="project-name" for="project-name">
+        <h3>Tên đề tài:</h3>
+      </label>
+      <input type="text" id="project-name" class="input-field" placeholder="Nhập tên đề tài">
+    </div>
+
+    <div class="input-group">
+      <label class="project-picture" for="project-picture">Ảnh đề tài</label>
+      <input type="text" id="file-path" class="input-field" readonly>
+      <input type="file" id="file-input" style="display: none;" accept="image/*">
+      <button type="button" id="upload-btn" class="upload-btn">+</button>
+    </div>
+
+    <!-- Thông tin cơ bản -->
+    <fieldset class="info-section">
+      <legend>Thông tin cơ bản</legend>
+
+      <!-- Chủ nhiệm và trạng thái -->
+      <div class="row">
+        <div class="input-group">
+          <label for="leader">Chủ nhiệm</label>
+          <input type="text" id="leader" class="input-field" placeholder="Nhập tên chủ nhiệm">
+        </div>
+        <div class="input-group">
+          <label for="status">Trạng thái</label>
+          <input type="text" id="status" class="input-field" value="Đang thực hiện" disabled>
+        </div>
+      </div>
+
+      <!-- Thời gian thực hiện -->
+      <div class="search-group" style="flex: 2;">
+        <div class="date-range">
+          <div class="date-field minWidth">
+            <label>Từ</label>
+            <input type="date" id="fromDate">
+            <span id="fromDateDisplay"></span>
+          </div>
+          <div class="date-field minWidth">
+            <label>Đến</label>
+            <input type="date" id="toDate">
+            <span id="toDateDisplay"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Đề tài cấp -->
+      <div class="search-group" style="flex: 2;">
+        <div class="search-field mbt">
+          <label>Đề tài cấp</label>
+          <select>
+            <option>Cơ sở</option>
+            <option>Trường</option>
+            <option>tỉnh</option>
+          </select>
+        </div>
+
+        <div class="search-field">
+          <label>Loại đề tài</label>
+          <select>
+            <option>Đề tài nghiên cứu khoa học của Giảng viên</option>
+            <option>Đề tài nghiên cứu khoa học của Sinh viên</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Giảng viên Tham gia -->
+
+    </fieldset>
+
+
+    <!-- Thông tin mô tả -->
+    <fieldset class="info-section">
+      <legend>Thông tin đề tài</legend>
+
+      <div class="section-title">
+        <label for="description">Mô tả đề tài</label>
+        <textarea id="description" rows="4" class="textarea-field" placeholder="Nhập mô tả đề tài..."></textarea>
+      </div>
+
+      <div class="section-title">
+        <label><strong>Thành viên Tham gia đề tài Nghiên cứu</strong></label>
+        <div id="member-container">
+            <div class="member-select-group">
+                <select class="input-field member-select">
+                    <option value="">Chọn thành viên...</option>
+                    <option value="Nguyễn Thị Lương">Nguyễn Thị Lương</option>
+                    <option value="Phan Thị Thanh Nga">Phan Thị Thanh Nga</option>
+                    <option value="Khánh">Khánh</option>
+                    <option value="La Quốc Thắng">La Quốc Thắng</option>
+                    <option value="Thiên Anh">Thiên Anh</option>
+                    <option value="Quang">Quang</option>
+                </select>
+                <button class="remove-member" onclick="removeMember(this)">X</button>
+            </div>
+        </div>
+        <button class="btn add-member" onclick="addMember()">+ Thêm thành viên</button>
+    </div>
+
+
+
+    </fieldset>
+
+    <fieldset class="info-section">
+      <legend>Kết quả nghiệm thu</legend>
+      <div class="row">
+        <div class="input-group">
+          <label class="acceptance-date" for="acceptance-date">Ngày nghiệm thu</label>
+          <input type="text" id="acceptance-date" class="input-field" value="Chưa có" readonly>
+        </div>
+      </div>
+      <div class="section-title">
+        <label for="result">Kết quả nghiệm thu</label>
+        <textarea id="result" rows="3" class="textarea-field" placeholder="Nhập kết quả...">Chưa có</textarea>
+      </div>
+      <div class="section-title">
+        <label for="achievement">Giải - Thành tựu</label>
+        <textarea id="achievement" rows="3" class="textarea-field" readonly"
+          placeholder="Nhập giải thưởng hoặc thành tựu...">Chưa có</textarea>
+      </div>
+      <div class="row">
+        <div class="input-group">
+          <label class="acceptance-rating" for="rating">Xếp loại nghiệm thu</label>
+          <input type="text" id="rating" class="input-field" value="Chưa có">
+        </div>
+      </div>
+    </fieldset>
+
+    <!-- Button actions -->
+    <div class="button-group">
+      <button type="submit" class="btn btn-submit">Lưu thông tin</button>
+      <button type="reset" class="btn btn-reset">Hủy</button>
+    </div>
+  </main>
+  <script src="add.js"></script>
+  <script src="new.js"></script>
+  <script src="project-handler.js"></script>
+
+</body>
+
+</html> 
